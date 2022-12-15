@@ -31,15 +31,16 @@ rickAndMortyCharacters.pop();
 
 console.log("El primer elemento es:", rickAndMortyCharacters[0]);
 
-const theLastChar = rickAndMortyCharacters.length - 1;
+console.log("El último elemento es:", rickAndMortyCharacters[rickAndMortyCharacters.length - 1]);
+console.log("El último elemento es:", rickAndMortyCharacters.at(-1));
 
-console.log("El último elemento es:", rickAndMortyCharacters[theLastChar]);
 
 
 // 1.6 Elimina el segundo elemento del array y muestra el array por consola.
 // const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
 
 rickAndMortyCharacters.push("Lapiz Lopez");
+
 rickAndMortyCharacters.splice(1,1);
 
 console.log("Si eliminamos a Beth, después de Rick aparecerá Jerry:", rickAndMortyCharacters);
